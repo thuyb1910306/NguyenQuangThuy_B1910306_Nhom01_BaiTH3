@@ -5,7 +5,6 @@ export default {
     },
 };
 </script>
-
 <template>
     <div>
         <div class="p-1">
@@ -26,8 +25,8 @@ export default {
         </div>
         <div class="p-1">
             <strong>Liên hệ yêu thích:&nbsp;</strong>
-            <i class="fas fa-check" v-if="contact.favorite"></i>
-            <i class="fas fatimes" v-else></i>
+            <i v-if="contact.favorite" class="fas fa-check"></i>
+            <i v-else class="fas fa-times"></i>
         </div>
     </div>
 </template>
